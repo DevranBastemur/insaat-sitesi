@@ -6,24 +6,20 @@
   <title>Nexus Builders — İnşaat</title>
   <meta name="description" content="Nexus Builders — Güven, kalite ve zamanında teslim. Konut, ticari ve endüstriyel projelerde anahtar teslim çözümler." />
   <style>
-    /*====================
-      TASARIM DEĞİŞKENLERİ
-    ====================*/
+ 
     :root{
-      --brand:#9c8466;          /* logodaki bej/taupe ton */
-      --brand-ink:#675843;      /* daha koyu metin */
-      --bg:#f6f1ec;             /* arka plan */
-      --ink:#1f2937;            /* ana metin */
-      --muted:#667085;          /* ikincil metin */
+      --brand:#9c8466;       
+      --brand-ink:#675843;     
+      --bg:#f6f1ec;            
+      --ink:#1f2937;            
+      --muted:#667085;          
       --card:#ffffff;
       --ring:rgba(156,132,102,.25);
       --radius:18px;
       --shadow:0 6px 24px rgba(0,0,0,.06);
     }
 
-    /*====================
-      GENEL STİL
-    ====================*/
+  
     html{scroll-behavior:smooth}
     *{box-sizing:border-box}
     body{
@@ -37,9 +33,7 @@
     .button{display:inline-flex; align-items:center; gap:.6rem; padding:.9rem 1.1rem; border-radius:14px; font-weight:700; border:1px solid transparent; box-shadow:var(--shadow); background:var(--brand); color:#fff}
     .button.ghost{background:#fff; color:var(--brand-ink); border-color:#e5e0da; box-shadow:none}
 
-    /*====================
-      ÜST MENÜ
-    ====================*/
+   
     header{
       position:sticky; top:0; z-index:50; background:rgba(255,255,255,.8); backdrop-filter:saturate(150%) blur(10px);
       border-bottom:1px solid #e7e2dc;
@@ -60,9 +54,7 @@
       .nav.open .navlinks{display:flex; flex-direction:column; gap:16px; position:absolute; inset:60px 16px auto; background:#fff; border:1px solid #e5e0da; border-radius:16px; padding:14px; box-shadow:var(--shadow)}
     }
 
-    /*====================
-      HERO
-    ====================*/
+ 
     .hero{position:relative; overflow:hidden}
     .hero .bg{
       position:absolute; inset:0; background:radial-gradient(1200px 500px at 20% -20%, #efe7dd, transparent 60%),
@@ -84,9 +76,7 @@
       .hero .inner{grid-template-columns:1fr;}
     }
 
-    /*====================
-      HİZMETLER
-    ====================*/
+   /
     section{padding:64px 0}
     .section-head{display:flex; align-items:end; justify-content:space-between; gap:16px}
     .cards{margin-top:22px; display:grid; grid-template-columns:repeat(3, 1fr); gap:18px}
@@ -102,9 +92,7 @@
       .cards{grid-template-columns:1fr}
     }
 
-    /*====================
-      PROJELER
-    ====================*/
+  
     .gallery{margin-top:22px; display:grid; grid-template-columns:repeat(3,1fr); gap:18px}
     .project{overflow:hidden}
     .project img{height:220px; object-fit:cover; border-bottom:1px solid #eee2d6}
@@ -118,10 +106,7 @@
     @media (max-width: 680px){
       .gallery{grid-template-columns:1fr}
     }
-
-    /*====================
-      HAKKIMIZDA + REFERANSLAR
-    ====================*/
+/
     .grid-2{display:grid; grid-template-columns:1fr 1fr; gap:24px}
     .badges{margin-top:18px; display:grid; grid-template-columns:repeat(4,1fr); gap:12px}
     .badge{border:1px solid #eee4d8; background:#fff; border-radius:14px; padding:14px; text-align:center}
@@ -134,9 +119,7 @@
       .quotes{grid-template-columns:1fr}
     }
 
-    /*====================
-      İLETİŞİM
-    ====================*/
+  
     form{display:grid; grid-template-columns:1fr 1fr; gap:12px}
     form .full{grid-column:1 / -1}
     input, textarea{
@@ -145,9 +128,7 @@
     }
     input:focus, textarea:focus{border-color:var(--brand); box-shadow:0 0 0 4px var(--ring)}
 
-    /*====================
-      ALT BİLGİ
-    ====================*/
+   
     footer{border-top:1px solid #e7e2dc; background:#fff}
     footer .foot{display:flex; align-items:center; justify-content:space-between; gap:12px; padding:20px 0}
     footer .links{display:flex; gap:14px; color:#5b5b5b}
@@ -155,11 +136,9 @@
   </style>
 </head>
 <body>
-  <!-- HEADER -->
   <header>
     <div class="container nav" id="nav">
       <div class="brand">
-        <!-- Görseli index.html ile aynı klasöre koy: dosya adı birebir kullanılmalı -->
         <img src="./Bej Klasik Dairesel Moda Logosu.png" alt="Nexus Builders Logo" />
         <div class="name">
           <h1>NEXUS BUILDERS</h1>
@@ -195,7 +174,6 @@
         </div>
       </div>
       <div class="visual">
-        <!-- Ofis görseli 1 -->
         <img src="./ofis.png" alt="Modern ofis alanı" />
         <div class="chips">
           <span>Konut</span><span>Ticari</span><span>Endüstriyel</span>
@@ -204,7 +182,6 @@
     </div>
   </section>
 
-  <!-- HİZMETLER -->
   <section id="hizmetler">
     <div class="container">
       <div class="section-head">
@@ -243,7 +220,6 @@
     </div>
   </section>
 
-  <!-- PROJELER -->
   <section id="projeler" style="background:#fff; border-block:1px solid #e7e2dc">
     <div class="container">
       <div class="section-head">
@@ -279,7 +255,6 @@
     </div>
   </section>
 
-  <!-- HAKKIMIZDA + GÖRSEL -->
   <section id="hakkimizda">
     <div class="container grid-2">
       <div class="card">
@@ -298,7 +273,6 @@
     </div>
   </section>
 
-  <!-- REFERANSLAR -->
   <section style="background:#fff; border-top:1px solid #e7e2dc">
     <div class="container">
       <h3 style="margin:0 0 14px;font-size:1.6rem">Müşteri Görüşleri</h3>
@@ -310,7 +284,6 @@
     </div>
   </section>
 
-  <!-- İLETİŞİM -->
   <section id="iletisim">
     <div class="container grid-2" style="align-items:start">
       <div class="card">
@@ -334,7 +307,6 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer>
     <div class="container foot">
       <div style="color:#6b6b6b">© <span id="year"></span> Nexus Builders. Tüm hakları saklıdır.</div>
@@ -347,7 +319,6 @@
   </footer>
 
   <script>
-    // Mobil menü
     const nav = document.getElementById('nav');
     const menuBtn = document.getElementById('menuBtn');
     menuBtn?.addEventListener('click', ()=> nav.classList.toggle('open'));
@@ -361,10 +332,8 @@
     window.addEventListener('scroll', onScroll);
     onScroll();
 
-    // Yıl
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Basit form doğrulama (demo) — burada sadece loga basıyoruz.
     const form = document.getElementById('contactForm');
     form.addEventListener('submit', (e)=>{
       e.preventDefault();
